@@ -4,3 +4,7 @@
 .menuActive {
     background-color: #D8E6FF;
 }
+
+.example::-webkit-scrollbar {
+    display: none;
+}
