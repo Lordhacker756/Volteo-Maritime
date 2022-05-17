@@ -18,8 +18,10 @@ function App() {
         <div className="subcontainer flex">
           {/* Contains the three components of the dashboard */}
           <Officer className="grid grid-rows-4"/>
-          <Stream className="grid grid-rows-4"/>
-          <MyDay className="grid grid-rows-4"/>
+
+          {/* Sending the important data as props */}
+          <Stream className="grid grid-rows-4" streamName="Ahoy Stream" lastUpdate="Last updated - 4 minutes ago" notice="Captain’s Bridge Order dated Nov 27, 2020" views="1"/>
+          <MyDay className="grid grid-rows-4" date="Tuesday, March 2"/>
         </div>
      </div>
     </div>

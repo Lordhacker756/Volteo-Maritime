@@ -3,7 +3,7 @@ import weather from "../assets/weather.png";
 import plus from "../assets/plus.png";
 import Tasks from "./Tasks";
 
-const MyDay = () => {
+const MyDay = (props) => {
   return (
     <div
       className="w-[344px] rounded-[10px] mx-0 my-3 p-5 flex flex-col justify-between"
@@ -16,18 +16,18 @@ const MyDay = () => {
               My Day
             </div>
             <div className="title font-[500] text-[14px] leading-[20px] text-[#5A5B6A]">
-              Tuesday, March 2
+              {props.date}
             </div>
           </div>
           <div className="weather">
             <img src={weather} className="w-[33px] h-[33px]" alt="" />
           </div>
         </div>
-        <Tasks />
-        <Tasks />
-        <Tasks />
-        <Tasks />
-        <Tasks />
+        <Tasks content="Deck Log | 1200 - 1600 Watch" assigned="Assigned by Wayship"/>
+        <Tasks content="COVID19 Health Guidelines" assigned="Assigned by Technical" due="Due in 2 days" important={true}/>
+        <Tasks content="Steering Check" assigned="Assigned by Chief Officer" due="Due in 2 hours" urgent={true}/>
+        <Tasks content="ECDIS Check" assigned="Assigned by Chief Officer" due="Due in 6 hours"/>
+        <Tasks content="Review Noon Report" assigned="Assigned by Self" due="Due in 8 hours"/>
       </div>
       <div className="input_box w-[301px] h-[44px] border-[0.5px] border-[#787885] rounded-[8px] flex items-center px-5">
         <img className="w-[14px] h-[14px] mr-5" src={plus} alt="" />
