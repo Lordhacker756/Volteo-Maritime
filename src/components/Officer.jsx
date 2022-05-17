@@ -2,6 +2,7 @@ import React from 'react'
 import hi from '../assets/hi.png'
 import ship from '../assets/cargo-ship.png'
 import batch from '../assets/Merchant-Navy.png'
+import './CSS/Dashboard.css'
 
 const Officer = () => {
   return (
@@ -34,7 +35,7 @@ const Officer = () => {
 
 
     {/* About Ship */}
-    <div className='officer_container w-[344px] h-[360px] rounded-[12px] my-3 flex flex-col justify-center content-center' style={{boxShadow:"0px 0px 1px rgba(40,41,61,0.48)"}}>
+    <div id='ship_container' className='officer_container w-[344px] h-[360px] rounded-[12px] my-3 flex flex-col justify-center content-center' style={{boxShadow:"0px 0px 1px rgba(40,41,61,0.48)"}}>
         <div className="greeting_container flex justify-between items-center p-4 px-5">
             <img src={ship} className="h-[45px] w-[45px]" alt="" />
             <p className="ship_code w-[182px] h-[28px] font-[700] text-[20px] leading-[28px]">

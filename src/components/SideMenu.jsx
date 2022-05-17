@@ -12,7 +12,7 @@ import '../index.css'
 
 const SideMenu = () => {
   return (
-      <div className='flex flex-col justify-evenly items-center'>
+      <div className='flex flex-col justify-evenly items-center p-[5px]'>
     {/*Container for each menu item   */}
     <MenuItem className="menuActive" status="active" icon={home} title="Home"/>
     <MenuItem icon={layout} title="Workspace"/>

@@ -1,0 +1,39 @@
+    .top_bar_container {
+        width: 1137px;
+    }
+    
+    .side_menu_container {
+        width: 110px;
+    }
+    
+    .officer_container {
+        justify-content: space-evenly;
+    }
+    
+    .activity_title {
+        align-items: baseline;
+    }
+    
+    .activity_content {
+        align-items: baseline;
+    }
+    
+    .activity_container {
+        align-items: baseline;
+    }
+    
+    .greeting_container {
+        padding-top: 0px;
+    }
+    
+    .stream_container {
+        overflow-y: scroll;
+    }
+    
+    .stream_container::-webkit-scrollbar {
+        display: none;
+    }
+    
+    input:focus {
+        outline: none !important;
+    }
