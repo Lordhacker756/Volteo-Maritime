@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="App main_container flex">
      {/* Two sub containers, one for side menu and other for remaining material */}
-     <div className="side_menu_container m-[10px] p-2 rounded-lg h-auto flex" style={{boxShadow:"0px 0px 1px rgba(0,0,0,0.48)"}}>
+     <div className="side_menu_container m-[8px] rounded-lg h-auto flex" style={{boxShadow:"0px 0px 1px rgba(0,0,0,0.48)"}}>
       <SideMenu/>
      </div>
      <div className="dashboard_container h-screen w-full">
